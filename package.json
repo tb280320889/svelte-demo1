@@ -15,7 +15,7 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
-		"commit": "gitmoji -c",
+		"commit": "git add . && gitmoji -c",
 		"postinstall": "husky"
 	},
 	"devDependencies": {
@@ -33,8 +33,6 @@
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
 		"commitlint-config-gitmoji": "^2.3.1",
-		"commitlint-plugin-gitmoji": "^2.2.6",
-		"conventional-changelog-conventionalcommits": "^8.0.0",
 		"eslint": "^9.18.0",
 		"eslint-config-prettier": "^10.0.1",
 		"eslint-plugin-svelte": "^3.0.0",

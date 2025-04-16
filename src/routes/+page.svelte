@@ -1,14 +1,25 @@
 <script lang="ts">
+	let number = $state(0)
+
 	function onclick(){
 		console.log('button clicked ');
+		number ++
 	}
 
-	let number = 5
+ let userInfo =	$derived.by(() => calcUserInfo(number))
+
+
+ function calcUserInfo(number: number):string {
+	if(number ===0) return "try this button"
+	if(number ===1) return "click 1 time"
+
+	return  `click ${number} times`
+ }
 
 </script>
 
 <h1>Welcome to Svelte 5</h1>
-<p>{number}</p>
+<p>{userInfo}</p>
 
 <button {onclick}>
 	Click me!
