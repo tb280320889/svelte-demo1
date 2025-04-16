@@ -1,20 +1,33 @@
 {
 	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSaveMode": "file",
+	"editor.defaultFormatter": "svelte.svelte-vscode",
 	"[svelte]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.defaultFormatter": "svelte.svelte-vscode",
 		"editor.formatOnSave": true
 	},
-	"prettier.requireConfig": false,
-	"prettier.useEditorConfig": false,
-	"prettier.documentSelectors": ["**/*.svelte"],
 	"files.associations": {
 		"*.svelte": "svelte"
 	},
-	"prettier.ignorePath": ".prettierignore",
-	"prettier.configPath": ".prettierrc",
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.enable": true,
+	"svelte.plugin.svelte.format.enable": true,
+	"svelte.plugin.svelte.diagnostics.enable": true,
+	"svelte.plugin.svelte.hover.enable": true,
+	"svelte.plugin.svelte.completions.enable": true,
+	"svelte.plugin.svelte.codeActions.enable": true,
+	"svelte.plugin.svelte.selectionRange.enable": true,
+	"svelte.plugin.typescript.enable": true,
+	"svelte.plugin.css.enable": true,
+	"svelte.plugin.html.enable": true,
+	"svelte.plugin.svelte.format.config.svelteSortOrder": "options-scripts-markup-styles",
+	"svelte.plugin.svelte.format.config.svelteStrictMode": false,
+	"svelte.plugin.svelte.format.config.svelteAllowShorthand": true,
+	"svelte.plugin.svelte.format.config.svelteBracketNewLine": true,
+	"svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": true,
 	"editor.codeActionsOnSave": {
 		"source.fixAll": "explicit",
-		"source.formatDocument": "explicit"
+		"source.formatDocument": "explicit",
+		"source.organizeImports": "explicit"
 	}
 }
