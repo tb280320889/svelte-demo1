@@ -29,5 +29,40 @@
 		"source.fixAll": "explicit",
 		"source.formatDocument": "explicit",
 		"source.organizeImports": "explicit"
-	}
+	},
+	"workbench.editor.customLabels": {
+		"**/routes/**/*+page.svelte": "${dirname} (Page)",
+		"**/routes/**/*+layout.svelte": "${dirname} (Layout)",
+		"**/routes/**/*+page.server.ts": "${dirname} (Server)",
+		"**/routes/**/*+layout.server.ts": "${dirname} (Layout Server)",
+		"**/routes/**/*+page.ts": "${dirname} (Load)",
+		"**/routes/**/*+layout.ts": "${dirname} (Layout Load)",
+		"**/routes/**/*+server.ts": "${dirname} (API)",
+		"**/routes/**/[*]*/**/*+page.svelte": "${dirname(-1)}/${dirname} (Page)",
+		"**/routes/**/[*]*/**/*+page.server.ts": "${dirname(-1)}/${dirname} (Server)",
+		"**/components/**/*.svelte": "${filename} Component",
+		"**/lib/**/*.ts": "Lib/${filename}",
+		"**/lib/**/*.js": "Lib/${filename}",
+		"**/lib/**/*.svelte": "Lib/${filename}",
+		"**/*.test.ts": "Test/${filename}",
+		"**/*.spec.ts": "Test/${filename}",
+		"**/svelte.config.js": "Config-Svelte",
+		"**/vite.config.ts": "Config-Vite",
+		"**/tailwind.config.js": "Config-Tailwind"
+	},
+	"breadcrumbs.enabled": true,
+	"breadcrumbs.filePath": "on",
+	"breadcrumbs.symbolPath": "on",
+	"breadcrumbs.icons": true,
+	"breadcrumbs.showFiles": true,
+	"breadcrumbs.showArrays": true,
+	"workbench.colorCustomizations": {
+		"breadcrumb.background": "#2a2d2e",
+		"breadcrumb.foreground": "#cccccc",
+		"breadcrumb.focusForeground": "#ffffff",
+		"breadcrumb.activeSelectionForeground": "#42a5f5",
+		"breadcrumbPicker.background": "#252526"
+	},
+	"editor.fontSize": 22,
+	"editor.lineHeight": 24
 }
