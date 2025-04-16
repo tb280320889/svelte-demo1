@@ -2,8 +2,19 @@
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[svelte]": {
-		"editor.defaultFormatter": "svelte.svelte-vscode"
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true
 	},
+	"prettier.requireConfig": false,
+	"prettier.useEditorConfig": false,
 	"prettier.documentSelectors": ["**/*.svelte"],
-	"svelte.enable-ts-plugin": true
+	"files.associations": {
+		"*.svelte": "svelte"
+	},
+	"prettier.ignorePath": ".prettierignore",
+	"prettier.configPath": ".prettierrc",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.formatDocument": "explicit"
+	}
 }

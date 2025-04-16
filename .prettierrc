@@ -3,14 +3,8 @@
 	"singleQuote": false,
 	"trailingComma": "none",
 	"semi": false,
-	"formatOnSave": true,
 	"printWidth": 100,
-	"plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
-	"editor.codeActionsOnSave": {
-		"source.fixAll": true,
-		"source.fixAll.eslint": "explicit",
-		"source.organizeImports": "explicit"
-	},
+	"plugins": ["prettier-plugin-svelte"],
 	"overrides": [
 		{
 			"files": "*.svelte",
@@ -18,5 +12,8 @@
 				"parser": "svelte"
 			}
 		}
-	]
+	],
+	"svelteStrictMode": false,
+	"svelteSortOrder": "options-scripts-styles-markup",
+	"svelteIndentScriptAndStyle": true
 }
