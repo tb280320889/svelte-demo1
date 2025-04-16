@@ -1,7 +1,8 @@
 <script lang="ts">
   import "../app.css";
 
-  let { children } = $props();
+  let data = $props();
 </script>
+<header>root folder header</header>
 
-{@render children()}
+{@render data.children()}
