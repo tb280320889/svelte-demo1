@@ -11,8 +11,9 @@
 	$inspect(() => userName)
 </script>
 
-<input type="text" bind:value={userName} />
+
 {@render children()}
+
 
 <style>
 	h1 {
